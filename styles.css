@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wheel-container {
+    position: relative;
+}
+
+.wheel {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    transition: filter 0.3s ease;
+}
+
+.tool img {
+    width: 100%;
+    height: 100%;
+}
+
+.center-image {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    z-index: 2;
+}
+
+.tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Adjust tool positions around the wheel */
+.tool:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
+.tool:nth-child(2) { transform: rotate(90deg) translate(120px) rotate(-90deg); }
+.tool:nth-child(3) { transform: rotate(180deg) translate(120px) rotate(-180deg); }
+.tool:nth-child(4) { transform: rotate(270deg) translate(120px) rotate(-270deg); }
+/* Add more tools and corresponding positions as needed */
