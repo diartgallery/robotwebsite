@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Spinning Wheel</title>
+</head>
+<body>
+    <div class="wheel-container">
+        <div class="wheel">
+            <div class="tool" data-tool="Tool 1" data-image="robot-tool1.png">
+                <img src="tool1.png" alt="Tool 1">
+            </div>
+            <div class="tool" data-tool="Tool 2" data-image="robot-tool2.png">
+                <img src="tool2.png" alt="Tool 2">
+            </div>
+            <div class="tool" data-tool="Tool 3" data-image="robot-tool3.png">
+                <img src="tool3.png" alt="Tool 3">
+            </div>
+            <div class="tool" data-tool="Tool 4" data-image="robot-tool4.png">
+                <img src="tool4.png" alt="Tool 4">
+            </div>
+            <!-- Add more tools as needed -->
+            <div class="center-image">
+                <img id="robot" src="default-robot.png" alt="Robot">
+            </div>
+        </div>
+        <div id="tooltip" class="tooltip hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
